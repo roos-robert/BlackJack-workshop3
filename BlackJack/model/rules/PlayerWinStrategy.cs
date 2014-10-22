@@ -8,7 +8,7 @@ namespace BlackJack.model.rules
     class PlayerWinStrategy : IWinGameStrategy
     {
         int g_maxScore = 21;
-        bool Winner(model.Player a_player, model.Dealer a_dealer)
+        public bool Winner(model.Player a_player, model.Dealer a_dealer)
         {
             if (a_player.CalcScore() > g_maxScore)
             {

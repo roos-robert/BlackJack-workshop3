@@ -47,9 +47,9 @@ namespace BlackJack.model
             return false;
         }
 
-        public bool IsDealerWinner(Player a_player)
+        public bool IsDealerWinner(Player a_player, Dealer a_dealer)
         {
-            m_winRule.Winner();
+            return m_winRule.Winner(a_player, a_dealer);
         }
 
         public bool IsGameOver()
