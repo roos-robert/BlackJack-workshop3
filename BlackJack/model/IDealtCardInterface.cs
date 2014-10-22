@@ -7,6 +7,6 @@ namespace BlackJack.model
 {
     interface IDealtCardInterface
     {
-        public void CardDealt();
+        public void CardDealt(Card c);
     }
 }

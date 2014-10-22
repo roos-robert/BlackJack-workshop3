@@ -5,7 +5,7 @@ using System.Text;
 
 namespace BlackJack.controller
 {
-    class PlayGame
+    class PlayGame : model.IDealtCardInterface
     {
         public bool Play(model.Game a_game, view.IView a_view)
         {

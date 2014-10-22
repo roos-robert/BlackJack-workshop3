@@ -9,12 +9,14 @@ namespace BlackJack.model
     {
         private model.Dealer m_dealer;
         private model.Player m_player;
+        private List<IDealtCardInterface> m_subscribers;
         
 
         public Game()
         {
             m_dealer = new Dealer(new rules.RulesFactory());
             m_player = new Player();
+            m_subscribers = new List<IDealtCardInterface>();
         }
 
         public void Register(IDealtCardInterface observer)

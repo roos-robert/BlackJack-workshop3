@@ -13,7 +13,7 @@ namespace BlackJack
             view.IView v = new view.SwedishView();//new view.SimpleView();
             controller.PlayGame ctrl = new controller.PlayGame();
 
-            //g.Register(g);
+            g.Register(ctrl);
 
             while (ctrl.Play(g, v));
         }
