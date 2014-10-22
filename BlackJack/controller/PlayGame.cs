@@ -1,11 +1,12 @@
-﻿using System;
+﻿using BlackJack.model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
 namespace BlackJack.controller
 {
-    class PlayGame : model.IDealtCardInterface
+    class PlayGame : IDealtCardInterface
     {
         public bool Play(model.Game a_game, view.IView a_view)
         {
@@ -35,6 +36,11 @@ namespace BlackJack.controller
             }
 
             return input != 'q';
+        }
+
+        public void CardDealt(Card c)
+        {
+
         }
     }
 }
