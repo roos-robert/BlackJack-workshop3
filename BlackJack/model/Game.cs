@@ -9,6 +9,7 @@ namespace BlackJack.model
     {
         private model.Dealer m_dealer;
         private model.Player m_player;
+        
 
         public Game()
         {
@@ -16,10 +17,11 @@ namespace BlackJack.model
             m_player = new Player();
         }
 
-        //public void Register(IDealtCardListener observer) 
-        //{
-            
-        //}
+        public void Register(IDealtCardInterface observer)
+        {
+            m_dealer.AddObserver(observer);
+            m_player.AddObserver(observer);
+        }
 
         public bool IsGameOver()
         {
