@@ -21,7 +21,8 @@ namespace BlackJack.model
 
         public void Register(IDealCardListener a_subscriber)
         {
-            m_subscribers.Add(a_subscriber);
+            m_dealer.RegisterObserver(a_subscriber);
+            m_player.RegisterObserver(a_subscriber);
         }
 
         public bool IsGameOver()

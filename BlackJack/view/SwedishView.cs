@@ -61,5 +61,15 @@ namespace BlackJack.view
             System.Console.WriteLine("Poäng: {0}", a_score);
             System.Console.WriteLine("");
         }
+
+        public void ShowBlackJack(IEnumerable<model.Card> dealerHand, IEnumerable<model.Card> playerHand, int dealerScore, int playerScore, bool gameOver, bool isDealerWinner)
+        {
+            DisplayDealerHand(dealerHand, dealerScore);
+            DisplayPlayerHand(playerHand, playerScore);
+            if (gameOver)
+            {
+                DisplayGameOver(isDealerWinner);
+            }
+        }
     }
 }

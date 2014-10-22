@@ -54,5 +54,15 @@ namespace BlackJack.view
             }
             
         }
+
+        public void ShowBlackJack(IEnumerable<model.Card> dealerHand, IEnumerable<model.Card> playerHand, int dealerScore, int playerScore, bool gameOver, bool isDealerWinner)
+        {
+            DisplayDealerHand(dealerHand, dealerScore);
+            DisplayPlayerHand(playerHand, playerScore);
+            if (gameOver)
+            {
+                DisplayGameOver(isDealerWinner);
+            }
+        }
     }
 }

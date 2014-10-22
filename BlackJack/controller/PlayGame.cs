@@ -20,13 +20,8 @@ namespace BlackJack.controller
         public bool Play()
         {
             a_view.DisplayWelcomeMessage();
-
-            CardDealed();
-
-            if (a_game.IsGameOver())
-            {
-                a_view.DisplayGameOver(a_game.IsDealerWinner());
-            }
+          
+            ShowBlackJack(a_game.IsGameOver());
 
             int input = Console.In.Read();
 
@@ -46,10 +41,20 @@ namespace BlackJack.controller
             return input != 'q';
         }
 
+        public void ShowBlackJack(bool isGameOver)
+        {
+            if (isGameOver == true)
+            {
+                a_view.ShowBlackJack(a_game.GetDealerHand(), a_game.GetPlayerHand(), a_game.GetDealerScore(), a_game.GetPlayerScore(), true, a_game.IsDealerWinner());
+            }
+            else
+            {
+                a_view.ShowBlackJack(a_game.GetDealerHand(), a_game.GetPlayerHand(), a_game.GetDealerScore(), a_game.GetPlayerScore(), false, false);
+            }
+        }
+
         public void CardDealed() {
-            System.Threading.Thread.Sleep(200);
-            a_view.DisplayDealerHand(a_game.GetDealerHand(), a_game.GetDealerScore());
-            a_view.DisplayPlayerHand(a_game.GetPlayerHand(), a_game.GetPlayerScore());
+            ShowBlackJack(a_game.IsGameOver());
         }
     }
 }
