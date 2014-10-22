@@ -18,9 +18,13 @@ namespace BlackJack.model.rules
             {
                 return false;
             }
+            else if (a_dealer.CalcScore() >= a_player.CalcScore())
+            {
+                return true;
+            }
             else
             {
-                return a_dealer.CalcScore() >= a_player.CalcScore();
+                return true;
             }
         }
     }
