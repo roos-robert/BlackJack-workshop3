@@ -5,10 +5,10 @@ using System.Text;
 
 namespace BlackJack.model.rules
 {
-    abstract class NewGameStrategy
+    abstract class NewGameStrategy : INewGameStrategy
     {
 
-        public bool NewGame(Deck a_deck, Dealer a_dealer, Player a_player)
+        virtual public bool NewGame(Deck a_deck, Dealer a_dealer, Player a_player)
         {
             return true;
         }
