@@ -1,19 +1,24 @@
-﻿using BlackJack.model;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using BlackJack.model;
 
 namespace BlackJack.controller
 {
-    class PlayGame : IDealtCardInterface
+    class PlayGame : IDealCardListener
     {
+        view.IView a_view;
+        model.Game a_game;
+
         public bool Play(model.Game a_game, view.IView a_view)
         {
+            this.a_view = a_view;
+            this.a_game = a_game;
+
             a_view.DisplayWelcomeMessage();
-            
-            a_view.DisplayDealerHand(a_game.GetDealerHand(), a_game.GetDealerScore());
-            a_view.DisplayPlayerHand(a_game.GetPlayerHand(), a_game.GetPlayerScore());
+
+            CardDealed();
 
             if (a_game.IsGameOver())
             {
@@ -38,9 +43,9 @@ namespace BlackJack.controller
             return input != 'q';
         }
 
-        public void CardDealt(Card c)
-        {
-
+        public void CardDealed() {        
+            a_view.DisplayDealerHand(a_game.GetDealerHand(), a_game.GetDealerScore());
+            a_view.DisplayPlayerHand(a_game.GetPlayerHand(), a_game.GetPlayerScore());
         }
     }
 }

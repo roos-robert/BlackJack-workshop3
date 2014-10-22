@@ -7,7 +7,6 @@ namespace BlackJack.model
 {
     class Player
     {
-        private IDealtCardInterface observer;
         private List<Card> m_hand = new List<Card>();
 
         public void DealCard(Card a_card)
@@ -31,10 +30,6 @@ namespace BlackJack.model
             {
                 c.Show(true);
             }
-        }
-        public void AddObserver(IDealtCardInterface observer)
-        {
-            this.observer = observer;
         }
 
         public int CalcScore()

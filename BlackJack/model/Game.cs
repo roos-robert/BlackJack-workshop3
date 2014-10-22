@@ -7,22 +7,21 @@ namespace BlackJack.model
 {
     class Game
     {
+        private List<IDealCardListener> m_subscribers;
+
         private model.Dealer m_dealer;
         private model.Player m_player;
-        private List<IDealtCardInterface> m_subscribers;
-        
 
         public Game()
         {
             m_dealer = new Dealer(new rules.RulesFactory());
             m_player = new Player();
-            m_subscribers = new List<IDealtCardInterface>();
+            m_subscribers = new List<IDealCardListener>();
         }
 
-        public void Register(IDealtCardInterface observer)
+        public void Register(IDealCardListener a_subscriber)
         {
-            m_dealer.AddObserver(observer);
-            m_player.AddObserver(observer);
+            m_subscribers.Add(a_subscriber);
         }
 
         public bool IsGameOver()
