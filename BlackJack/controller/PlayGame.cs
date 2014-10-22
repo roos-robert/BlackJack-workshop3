@@ -20,21 +20,24 @@ namespace BlackJack.controller
         public bool Play()
         {
             a_view.DisplayWelcomeMessage();
-          
+            
             ShowBlackJack(a_game.IsGameOver());
 
             int input = Console.In.Read();
 
             if (input == 'p')
             {
+                System.Threading.Thread.Sleep(1000);
                 a_game.NewGame();
             }
             else if (input == 'h')
             {
+                System.Threading.Thread.Sleep(1000);
                 a_game.Hit();
             }
             else if (input == 's')
             {
+                System.Threading.Thread.Sleep(1000);
                 a_game.Stand();
             }
 
@@ -54,7 +57,10 @@ namespace BlackJack.controller
         }
 
         public void CardDealed() {
+            a_view.DisplayWelcomeMessage();
             ShowBlackJack(a_game.IsGameOver());
+            System.Threading.Thread.Sleep(3000);
+            Console.Clear();
         }
     }
 }

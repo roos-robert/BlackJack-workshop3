@@ -42,10 +42,6 @@ namespace BlackJack.model
 
         public bool Hit()
         {
-            //foreach (var item in m_subscribers)
-            //{
-            //    item.CardDealed();
-            //}
             return m_dealer.Hit(m_player);
         }
 
