@@ -18,10 +18,10 @@ namespace BlackJack.model.rules
                     if (c.GetValue() == Card.Value.Ace)
                     {
                         return true;
-                    }
-                }
+                    }                    
+                }                
             }
-            return false;
+            return a_dealer.CalcScore() < g_hitLimit;
         }
     }
 }
