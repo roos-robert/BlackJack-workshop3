@@ -16,7 +16,7 @@ namespace BlackJack.model
             m_player = new Player();
         }
 
-        //public void Register(IDealedCardListener observer) 
+        //public void Register(IDealtCardListener observer) 
         //{
             
         //}
