@@ -26,7 +26,6 @@ namespace BlackJack.model.rules
             {
                 return true;
             }
-
         }
     }
 }
