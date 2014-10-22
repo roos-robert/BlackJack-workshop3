@@ -12,6 +12,11 @@ namespace BlackJack.model.rules
             return new BasicHitStrategy();
         }
 
+        public IHitStrategy GetHitRuleSoft17()
+        {
+            return new HitSoft17();
+        }
+
         public INewGameStrategy GetNewGameRule()
         {
             return new AmericanNewGameStrategy();

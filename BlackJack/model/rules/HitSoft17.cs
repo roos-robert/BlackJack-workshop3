@@ -13,5 +13,10 @@ namespace BlackJack.model.rules
         {
             return a_dealer.CalcScore() < g_hitLimit;
         }
+
+        public bool CheckSoft17(model.Player a_dealer)
+        {
+            return false;
+        }
     }
 }
