@@ -57,11 +57,8 @@ namespace BlackJack.view
 
         public void ShowBlackJack(IEnumerable<model.Card> dealerHand, IEnumerable<model.Card> playerHand, int dealerScore, int playerScore, bool gameOver, bool isDealerWinner)
         {
-            System.Threading.Thread.Sleep(1000);
             DisplayDealerHand(dealerHand, dealerScore);
-            System.Threading.Thread.Sleep(1000);
             DisplayPlayerHand(playerHand, playerScore);
-            System.Threading.Thread.Sleep(1000);
             if (gameOver)
             {
                 DisplayGameOver(isDealerWinner);

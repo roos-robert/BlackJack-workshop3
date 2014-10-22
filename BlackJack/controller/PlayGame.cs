@@ -17,6 +17,7 @@ namespace BlackJack.controller
             this.a_game = a_game;
         }
 
+        // Run on first init of program.
         public bool Play()
         {
             a_view.DisplayWelcomeMessage();
@@ -44,6 +45,7 @@ namespace BlackJack.controller
             return input != 'q';
         }
 
+        // Method for showing the hands, called on by CardDeal() on new data
         public void ShowBlackJack(bool isGameOver)
         {
             if (isGameOver == true)
@@ -56,6 +58,7 @@ namespace BlackJack.controller
             }
         }
 
+        // Handles what to do on new data, here presenting and then pausing for EXTRA DRAMA DURR DURR DUUUUR!
         public void CardDealed() {
             a_view.DisplayWelcomeMessage();
             ShowBlackJack(a_game.IsGameOver());
