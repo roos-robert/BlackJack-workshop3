@@ -5,8 +5,14 @@ using System.Text;
 
 namespace BlackJack.model.rules
 {
-    abstract class NewGameStrategy : INewGameStrategy
+    abstract class NewGameStrategy
     {
+
+        public bool NewGame(Deck a_deck, Dealer a_dealer, Player a_player)
+        {
+            return true;
+        }
+
         Card c;
         public void PlayerCard(Deck a_deck, Player a_player)
         {            
