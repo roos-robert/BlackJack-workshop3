@@ -24,11 +24,6 @@ namespace BlackJack.model
             m_hand.Clear();
         }
 
-        public void Stand()
-        {
-            // TODO Fix stand
-        }
-
         public void ShowHand()
         {
             foreach (Card c in GetHand())

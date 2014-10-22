@@ -67,5 +67,13 @@ namespace BlackJack.model
             }
             return false;
         }
+
+        public void Stand()
+        {
+            if(m_deck != null)
+            {
+                ShowHand();
+            }
+        }
     }
 }
