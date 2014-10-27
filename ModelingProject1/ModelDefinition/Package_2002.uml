@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
   dslVersion="1.0.0.0"
   Id="78ecdf54-880b-4dd8-93ea-0b197a40bb02"
   name="BlackJack"
@@ -188,7 +188,7 @@
             </ownedParameters>
           </operation>
           <operation
-            Id="80bc1f21-af73-42c9-bf26-b89dbcaf0308"
+            Id="74d5cf00-9f93-407e-a3a3-e6f3b21087f6"
             name="Program"
             isLeaf="false"
             isStatic="false"
@@ -197,54 +197,54 @@
             isQuery="false">
             <referencesInternal>
               <reference
-                Id="b2a26f28-fe1f-4593-b9e0-30c6604d8a41"
+                Id="a748c7b6-8b00-4086-8528-c4a53dbdf1c3"
                 handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FMattias%2FDocuments%2FGitHub%2FBlackJack-workshop3%2FBlackJack%2Fbin%2FDebug%2FBlackJack.exe Namespace%3DBlackJack Type%3DProgram Member%3D.ctor"
                 tag="ViewCode" />
             </referencesInternal>
             <appliedStereotypesInternal>
               <stereotypeInstance
-                Id="4fc1336d-56b0-42f5-942e-fe7f4f740598"
+                Id="63ffff6d-821e-425e-9c71-15c43b5d79f9"
                 name="method"
                 profile="CSharpProfile">
                 <propertyInstances>
                   <stereotypeInstanceHasPropertyInstances
-                    Id="588b1baf-86fe-4432-976c-02c59a25cc1a">
+                    Id="9022deed-fb1b-437d-9400-12f459309363">
                     <propertyInstance
-                      Id="d77f314b-a97b-4707-a889-9c0562939283"
+                      Id="68a3cf9a-a9ac-4b04-bc22-8cc2346bf22d"
                       name="ClrAttributes" />
                   </stereotypeInstanceHasPropertyInstances>
                   <stereotypeInstanceHasPropertyInstances
-                    Id="a95f07b2-3432-453b-b7e4-79481a033f78">
+                    Id="e3957a44-5581-48ef-b778-1d83fa7b24a1">
                     <propertyInstance
-                      Id="57c45e04-d067-4d90-967a-172bf9418946"
+                      Id="37b455d1-21ac-4e6d-a5b0-d2e0519d17f1"
                       name="IsPartial"
                       value="false" />
                   </stereotypeInstanceHasPropertyInstances>
                   <stereotypeInstanceHasPropertyInstances
-                    Id="0d3ff046-626c-4988-a822-095bb098a729">
+                    Id="7e61bdae-5b49-40ad-9c66-a531bcee8c2e">
                     <propertyInstance
-                      Id="91061340-cbbd-45a3-87c6-efa1d17ba044"
+                      Id="9523a774-fe28-4b17-b49a-2b77c733bc35"
                       name="IsUnsafe"
                       value="false" />
                   </stereotypeInstanceHasPropertyInstances>
                   <stereotypeInstanceHasPropertyInstances
-                    Id="66874844-73a8-4f52-8db3-eb5486bf159e">
+                    Id="e13b275f-397b-4aa3-99ca-4870b4b04c49">
                     <propertyInstance
-                      Id="207a0e09-1890-4601-ae53-e1f8c327781c"
+                      Id="21de882d-c825-4f3b-968b-6265189cf801"
                       name="Inheritance"
                       value="none" />
                   </stereotypeInstanceHasPropertyInstances>
                   <stereotypeInstanceHasPropertyInstances
-                    Id="f52509d1-336b-4745-8240-8ecd15fb42d8">
+                    Id="bf1e70e7-b486-4137-99c0-b56b217afc74">
                     <propertyInstance
-                      Id="a11dedb3-5157-44a9-9106-a5a309cb0741"
+                      Id="709db8dd-c450-40a3-9c92-8e4ef58ae170"
                       name="PackageVisibility"
                       value="internal" />
                   </stereotypeInstanceHasPropertyInstances>
                   <stereotypeInstanceHasPropertyInstances
-                    Id="8d85f757-11a3-464c-868e-f88acc70bb5a">
+                    Id="4e193dd9-fc79-4463-86e2-d8da0ddf4175">
                     <propertyInstance
-                      Id="6bcbf0a2-a7af-4e91-bb41-fd445626e9ee"
+                      Id="c2624865-0dc4-4c14-9cc3-e2c4dc942de1"
                       name="params"
                       value="false" />
                   </stereotypeInstanceHasPropertyInstances>
