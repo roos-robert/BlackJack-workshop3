@@ -7,10 +7,32 @@ namespace BlackJack.view
 {
     class SimpleView : IView
     {
+        // Constants for the menu choices
         const char quit = 'q';
         const char newGame = 'p';
         const char hit = 'h';
         const char stand = 's';
+
+        // Getters for the constants
+        public char GetQuit()
+        {
+            return quit;
+        }
+
+        public char GetNewGame()
+        {
+            return newGame;
+        }
+
+        public char GetHit()
+        {
+            return hit;
+        }
+
+        public char GetStand()
+        {
+            return stand;
+        }
 
         public void DisplayWelcomeMessage()
         {

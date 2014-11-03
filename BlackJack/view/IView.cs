@@ -14,6 +14,11 @@ namespace BlackJack.view
         void DisplayGameOver(bool a_dealerIsWinner);
         // TODO optimize, a base view should  be added, since functionality is the same for all views for this method.
         int GetInput();
+        char GetNewGame();
+        char GetStand();
+        // No pun intended!
+        char GetHit();
+        char GetQuit();
         void ShowBlackJack(IEnumerable<model.Card> dealerHand, IEnumerable<model.Card> playerHand, int dealerScore, int playerScore, bool gameOver, bool a_dealerIsWinner);
     }
 }

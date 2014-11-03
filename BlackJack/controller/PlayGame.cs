@@ -26,23 +26,23 @@ namespace BlackJack.controller
 
             int input = a_view.GetInput();
 
-            if (input == 'p')
+            if (input == a_view.GetNewGame())
             {
                 System.Threading.Thread.Sleep(1000);
                 a_game.NewGame();
             }
-            else if (input == 'h')
+            else if (input == a_view.GetHit())
             {
                 System.Threading.Thread.Sleep(1000);
                 a_game.Hit();
             }
-            else if (input == 's')
+            else if (input == a_view.GetStand())
             {
                 System.Threading.Thread.Sleep(1000);
                 a_game.Stand();
             }
 
-            return input != 'q';
+            return input != a_view.GetQuit();
         }
 
         // Method for showing the hands, called on by CardDeal() on new data
