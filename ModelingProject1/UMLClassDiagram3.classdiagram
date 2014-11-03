@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="7bc47679-59b6-4780-be5e-e8e08623a4c5" name="UMLClassDiagram3" linkedPackageId="90e1a331-c9a0-4b8f-bd1f-f324e346253d" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="691c232d-4abe-49ed-b276-c6c42c207a7c">
+      <profileInstance Id="82531686-ca89-4a50-b3d1-782fad876056" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="c8dc4611-a224-458b-b057-58cfcd18b835">
+      <profileInstance Id="95ed66ee-21b7-461b-a48e-d25a677ecb7f" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="47310ca0-6a59-4832-8082-b5c5d2f537d4">
+      <profileInstance Id="e5999611-35bf-4826-9e78-33e6e084a775" name="CSharpProfile">
+        <elementDefinition Id="b7e9678c-22c4-4737-be7a-fa073043dfdf" />
+      </profileInstance>
+      <elementDefinition Id="dc212871-3751-4509-8572-1938e6d5961b" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasPackages>
+      <package Id="4b84e570-b732-468d-8bd5-68cbf7f36b28" name="Model">
+        <elementDefinition Id="372538a3-dd0a-4b0b-b89b-cf1a854980c4" />
+        <packagedElements>
+          <packageHasNamedElement>
+            <class Id="87386967-1344-4660-afb5-015bf0afc940" name="Game" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="8d1984be-66da-455f-9713-455245e9e7dd" />
+              <targetEnds>
+                <association Id="138481a8-7fab-44ae-9633-9c5b8c1c935e" isDerived="false" sourceEndRoleName="Game" targetEndRoleName="Dealer" isLeaf="false" isAbstract="false">
+                  <classMoniker Id="6dda4432-43ac-4d20-9534-a31e6f6534d0" LastKnownName="Dealer" />
+                  <relationshipOwnedElementsInternal>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="ba105ff1-f3aa-46f6-9468-aabeb0e4ef5a" name="Game" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                        <elementDefinition Id="b938f09b-ab80-4255-ac47-e51b7280cd4a" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="76af81c3-9aba-43e0-ba5a-be436a62cfb3" name="Dealer" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <elementDefinition Id="7d51f521-d905-4298-a177-aba1d20a6443" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                  </relationshipOwnedElementsInternal>
+                  <elementDefinition Id="b4f0c3e7-1ed6-4d79-b8eb-8f4c6416081b" />
+                </association>
+              </targetEnds>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="6dda4432-43ac-4d20-9534-a31e6f6534d0" name="Dealer" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="8d9973af-bee9-46dd-b4a4-900eec099075" />
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <Interface Id="0221d171-ccf9-442a-a5cf-ea3317064a9e" name="DealtCardListener" isAbstract="false" isLeaf="false">
+              <elementDefinition Id="0a0be51a-35cb-4b00-b7ee-4cedb3229ad5" />
+            </Interface>
+          </packageHasNamedElement>
+        </packagedElements>
+      </package>
+    </logicalClassDesignerModelHasPackages>
+    <logicalClassDesignerModelHasPackages>
+      <package Id="eb081666-ec82-44eb-9c1f-6c2a995814ca" name="View">
+        <elementDefinition Id="1e570a99-7668-4063-9f0e-ce64f668e06e" />
+      </package>
+    </logicalClassDesignerModelHasPackages>
+    <logicalClassDesignerModelHasPackages>
+      <package Id="b6ace01a-8448-4478-adbb-91a19f7c61e7" name="Controller">
+        <elementDefinition Id="462d6c1b-254d-426e-9309-e5762ac82a51" />
+        <packagedElements>
+          <packageHasNamedElement>
+            <class Id="e0ff3402-0d10-4904-ad2a-dce4f21db501" name="PlayGame" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="f6158fa0-9ddc-4def-b24c-34020660c173" />
+              <suppliersInternal>
+                <interfaceRealization Id="3573fe23-302a-4246-896d-4f9e3c5b6aea">
+                  <interfaceMoniker Id="0221d171-ccf9-442a-a5cf-ea3317064a9e" LastKnownName="DealtCardListener" />
+                  <elementDefinition Id="4e5db5cb-9914-49f1-bcc9-d93adb960a0f" />
+                </interfaceRealization>
+              </suppliersInternal>
+              <targetEnds>
+                <association Id="4f7c1ca8-996b-4b39-b872-20aa7b1b5ee7" isDerived="false" sourceEndRoleName="PlayGame" targetEndRoleName="Game" isLeaf="false" isAbstract="false">
+                  <classMoniker Id="87386967-1344-4660-afb5-015bf0afc940" LastKnownName="Game" />
+                  <relationshipOwnedElementsInternal>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="a11ce18a-5b33-43ea-9796-e4b2e15b0c66" name="PlayGame" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                        <elementDefinition Id="5b870535-965e-44a3-b0c0-24c94040afc1" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="6ea200b1-9f30-4ad9-8f34-71c22d0cb52b" name="Game" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <lowerValueInternal>
+                          <literalString Id="9de8873e-e38d-4fc9-8c3c-99e7a3cab810" name="Lower" value="1">
+                            <elementDefinition Id="69059bde-4247-4a02-b7d8-59717bf9d6bf" />
+                          </literalString>
+                        </lowerValueInternal>
+                        <upperValueInternal>
+                          <literalString Id="9fd927f7-d5f2-48b4-85a2-d91779738444" name="Upper" value="1">
+                            <elementDefinition Id="9650819b-c0ae-45cb-ada6-2cf789da4432" />
+                          </literalString>
+                        </upperValueInternal>
+                        <elementDefinition Id="8e3012e9-3513-4709-b580-d9cd4ebad29c" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                  </relationshipOwnedElementsInternal>
+                  <elementDefinition Id="b7fbeda4-450f-4f53-af52-d47d6ad743f1" />
+                </association>
+              </targetEnds>
+            </class>
+          </packageHasNamedElement>
+        </packagedElements>
+      </package>
+    </logicalClassDesignerModelHasPackages>
+  </packagedElements>
+  <package Id="90e1a331-c9a0-4b8f-bd1f-f324e346253d" name="ModelingProject1">
+    <elementDefinition Id="96cf48d8-8321-4097-bc5c-f5ebb8d315b5" />
+  </package>
+</logicalClassDesignerModel>

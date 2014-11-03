@@ -28,6 +28,9 @@
     <Content Include="Graph2.dgml">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="ModelDefinition\Package1_1800.uml">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="ModelDefinition\Package1_2002.uml">
       <SubType>Content</SubType>
     </Content>
@@ -41,6 +44,12 @@
       <SubType>Content</SubType>
     </Content>
     <Content Include="ModelDefinition\Package2_2003.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_1758.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_1800.uml">
       <SubType>Content</SubType>
     </Content>
     <Content Include="ModelDefinition\Package_2002.uml">
@@ -58,6 +67,13 @@
     <Content Include="UMLClassDiagram1.classdiagram.layout">
       <SubType>Content</SubType>
       <DependentUpon>UMLClassDiagram1.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="UMLClassDiagram3.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UMLClassDiagram3.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>UMLClassDiagram3.classdiagram</DependentUpon>
     </Content>
     <Content Include="UMLClassDiagramBlackJack.classdiagram">
       <SubType>Content</SubType>
