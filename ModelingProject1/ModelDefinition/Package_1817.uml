@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="a0378bf8-1f64-43a8-ba2e-52a385358a41"
+  name="model::rules" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <packagedElements>
+    <packageHasNamedElement>
+      <Interface
+        Id="81e34641-837f-44dd-a273-1a8762e0d298"
+        name="IWinGameStrategy"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="8f3eec3d-ea8f-44b1-a5f1-86df208c1255"
+        name="PlayerWinStrategy"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <interfaceRealization
+            Id="f45e11d9-509b-40f5-93d8-3b4bf133003d">
+            <interfaceMoniker
+              Id="81e34641-837f-44dd-a273-1a8762e0d298"
+              LastKnownName="IWinGameStrategy"
+              LastKnownLocation="Package_1817.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="5a42ef82-9468-453e-8981-483519c3c5c5"
+        name="DealerWinStrategy"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <interfaceRealization
+            Id="4d525cce-38f1-4377-8360-6cb839cf7d9b">
+            <interfaceMoniker
+              Id="81e34641-837f-44dd-a273-1a8762e0d298"
+              LastKnownName="IWinGameStrategy"
+              LastKnownLocation="Package_1817.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="97023d75-c7e3-4870-b279-35e7f74857bf"
+        name="RulesFactory"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="0bd39d43-2ad2-4bf8-b17b-060fc93e9271">
+            <classMoniker
+              Id="8f3eec3d-ea8f-44b1-a5f1-86df208c1255"
+              LastKnownName="PlayerWinStrategy"
+              LastKnownLocation="Package_1817.uml" />
+          </dependency>
+          <dependency
+            Id="491bc3a6-45ed-426a-b416-d063f58261c9">
+            <classMoniker
+              Id="55d29628-20c4-4c09-b092-adaeda87d043"
+              LastKnownName="HitSoft17"
+              LastKnownLocation="Package_1817.uml" />
+          </dependency>
+        </suppliersInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="55d29628-20c4-4c09-b092-adaeda87d043"
+        name="HitSoft17"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <interfaceRealization
+            Id="ddcbc83b-b9db-4755-b848-91979fe188cc">
+            <interfaceMoniker
+              Id="ad5d1032-571b-4ad9-85f4-9983160f2445"
+              LastKnownName="IHitStrategy"
+              LastKnownLocation="Package_1817.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="ad5d1032-571b-4ad9-85f4-9983160f2445"
+        name="IHitStrategy"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="8ddd838d-1273-474c-934d-0cbf4320533b"
+        name="BasicHitStrategy"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <interfaceRealization
+            Id="8718530c-122e-4005-bf12-04c1d30f10e6">
+            <interfaceMoniker
+              Id="ad5d1032-571b-4ad9-85f4-9983160f2445"
+              LastKnownName="IHitStrategy"
+              LastKnownLocation="Package_1817.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

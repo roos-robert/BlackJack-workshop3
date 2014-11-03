@@ -39,20 +39,26 @@
     <packageHasNamedElement>
       <packageMoniker
         Id="372538a3-dd0a-4b0b-b89b-cf1a854980c4"
-        LastKnownName="Model"
+        LastKnownName="model"
         LastKnownLocation="Package_1758.uml" />
     </packageHasNamedElement>
     <packageHasNamedElement>
       <packageMoniker
         Id="1e570a99-7668-4063-9f0e-ce64f668e06e"
-        LastKnownName="View"
+        LastKnownName="view"
         LastKnownLocation="Package_1800.uml" />
     </packageHasNamedElement>
     <packageHasNamedElement>
       <packageMoniker
         Id="462d6c1b-254d-426e-9309-e5762ac82a51"
-        LastKnownName="Controller"
+        LastKnownName="controller"
         LastKnownLocation="Package1_1800.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="a0378bf8-1f64-43a8-ba2e-52a385358a41"
+        LastKnownName="model::rules"
+        LastKnownLocation="Package_1817.uml" />
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType
