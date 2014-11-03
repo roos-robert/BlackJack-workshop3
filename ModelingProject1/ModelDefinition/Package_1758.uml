@@ -51,6 +51,84 @@
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
           </association>
+          <association
+            Id="326f869d-b0b5-4454-8987-e7bea35fe2ec"
+            isDerived="false"
+            sourceEndRoleName="Game"
+            targetEndRoleName="IDealCardListener"
+            isLeaf="false"
+            isAbstract="false">
+            <interfaceMoniker
+              Id="0a0be51a-35cb-4b00-b7ee-4cedb3229ad5"
+              LastKnownName="IDealCardListener"
+              LastKnownLocation="Package_1758.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="61e6cb92-1c21-4387-af7b-9462c214011b"
+                  name="Game"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="38e8e7ec-b8ec-43f0-8747-7949523c3166"
+                  name="IDealCardListener"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="72a61851-bb22-48ec-b84c-d7fb45cb6a86"
+            isDerived="false"
+            sourceEndRoleName="Game"
+            targetEndRoleName="Player"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="06f4c2ef-429c-431a-b493-50eb434f8c0a"
+              LastKnownName="Player"
+              LastKnownLocation="Package_1758.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="30f89615-4bbc-4c02-a230-82fbb54c6fc9"
+                  name="Game"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="98aaab6f-2c08-40cb-836a-5ec57bfb3731"
+                  name="Player"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
         </targetEnds>
       </class>
     </packageHasNamedElement>
@@ -65,9 +143,59 @@
     <packageHasNamedElement>
       <Interface
         Id="0a0be51a-35cb-4b00-b7ee-4cedb3229ad5"
-        name="DealtCardListener"
+        name="IDealCardListener"
         isAbstract="false"
         isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="06f4c2ef-429c-431a-b493-50eb434f8c0a"
+        name="Player"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="624e7909-07c5-4b6e-8a03-06a12254bf68"
+            isDerived="false"
+            sourceEndRoleName="Player"
+            targetEndRoleName="IDealCardListener"
+            isLeaf="false"
+            isAbstract="false">
+            <interfaceMoniker
+              Id="0a0be51a-35cb-4b00-b7ee-4cedb3229ad5"
+              LastKnownName="IDealCardListener"
+              LastKnownLocation="Package_1758.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="c0e8f0da-b2d5-4eaa-8ebc-6f10a123aa59"
+                  name="Player"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="efb8cb32-ca72-474a-8730-6a801fb4d4aa"
+                  name="IDealCardListener"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </class>
     </packageHasNamedElement>
   </packagedElements>
 </package>

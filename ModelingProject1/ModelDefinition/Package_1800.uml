@@ -2,4 +2,50 @@
 <package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
   dslVersion="1.0.0.0"
   Id="1e570a99-7668-4063-9f0e-ce64f668e06e"
-  name="View" xmlns="http://schemas.microsoft.com/dsltools/ModelStore" />
+  name="View" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <packagedElements>
+    <packageHasNamedElement>
+      <Interface
+        Id="504549ad-a2a8-41a3-aef2-e841225a1655"
+        name="IView"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="e1de6a15-0aa3-43d7-80bc-0239cfa4da95"
+        name="SimpleView"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <interfaceRealization
+            Id="e01821f3-79d7-4360-90d8-c016da2b1a3e">
+            <interfaceMoniker
+              Id="504549ad-a2a8-41a3-aef2-e841225a1655"
+              LastKnownName="IView"
+              LastKnownLocation="Package_1800.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="a08ed085-a3a4-4bf7-89fd-bec3dcdb01d1"
+        name="SwedishView"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <interfaceRealization
+            Id="5ac1087e-b7b2-43b7-a11b-2ad82829e876">
+            <interfaceMoniker
+              Id="504549ad-a2a8-41a3-aef2-e841225a1655"
+              LastKnownName="IView"
+              LastKnownLocation="Package_1800.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

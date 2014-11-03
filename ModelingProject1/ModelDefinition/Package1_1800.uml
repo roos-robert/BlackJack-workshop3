@@ -16,7 +16,7 @@
             Id="4e5db5cb-9914-49f1-bcc9-d93adb960a0f">
             <interfaceMoniker
               Id="0a0be51a-35cb-4b00-b7ee-4cedb3229ad5"
-              LastKnownName="DealtCardListener"
+              LastKnownName="IDealCardListener"
               LastKnownLocation="Package_1758.uml" />
           </interfaceRealization>
         </suppliersInternal>
@@ -70,6 +70,45 @@
                       value="1" />
                   </upperValueInternal>
                 </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="11b02722-8c79-48d9-9ec2-a7811f361159"
+            isDerived="false"
+            sourceEndRoleName="PlayGame"
+            targetEndRoleName="IView"
+            isLeaf="false"
+            isAbstract="false">
+            <interfaceMoniker
+              Id="504549ad-a2a8-41a3-aef2-e841225a1655"
+              LastKnownName="IView"
+              LastKnownLocation="Package_1800.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="553d1615-21b8-4338-b8e4-98bf0fc52ce1"
+                  name="PlayGame"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="7af4be5f-4c3c-4f66-bdaa-eeb7be87d59b"
+                  name="IView"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
           </association>

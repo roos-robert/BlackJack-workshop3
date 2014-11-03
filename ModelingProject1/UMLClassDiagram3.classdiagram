@@ -45,6 +45,38 @@
                   </relationshipOwnedElementsInternal>
                   <elementDefinition Id="b4f0c3e7-1ed6-4d79-b8eb-8f4c6416081b" />
                 </association>
+                <association Id="b7e99a89-f26b-475f-9a53-7221a27987ec" isDerived="false" sourceEndRoleName="Game" targetEndRoleName="IDealCardListener" isLeaf="false" isAbstract="false">
+                  <interfaceMoniker Id="0221d171-ccf9-442a-a5cf-ea3317064a9e" LastKnownName="IDealCardListener" />
+                  <relationshipOwnedElementsInternal>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="70e08897-889f-4016-946c-0da8457968fd" name="Game" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                        <elementDefinition Id="61e6cb92-1c21-4387-af7b-9462c214011b" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="2e834a65-421d-417f-a2f7-c5952bf21e66" name="IDealCardListener" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <elementDefinition Id="38e8e7ec-b8ec-43f0-8747-7949523c3166" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                  </relationshipOwnedElementsInternal>
+                  <elementDefinition Id="326f869d-b0b5-4454-8987-e7bea35fe2ec" />
+                </association>
+                <association Id="c03fdf71-6bac-4d3a-863f-c047d2109294" isDerived="false" sourceEndRoleName="Game" targetEndRoleName="Player" isLeaf="false" isAbstract="false">
+                  <classMoniker Id="ae849feb-7445-44d0-aa0a-8e73ed70b3cf" LastKnownName="Player" />
+                  <relationshipOwnedElementsInternal>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="e8f1214d-b618-4ab6-b0de-9fca818a9ddd" name="Game" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                        <elementDefinition Id="30f89615-4bbc-4c02-a230-82fbb54c6fc9" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="2a2c433c-35ae-452e-8c01-9b62f29d20dd" name="Player" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <elementDefinition Id="98aaab6f-2c08-40cb-836a-5ec57bfb3731" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                  </relationshipOwnedElementsInternal>
+                  <elementDefinition Id="72a61851-bb22-48ec-b84c-d7fb45cb6a86" />
+                </association>
               </targetEnds>
             </class>
           </packageHasNamedElement>
@@ -54,9 +86,32 @@
             </class>
           </packageHasNamedElement>
           <packageHasNamedElement>
-            <Interface Id="0221d171-ccf9-442a-a5cf-ea3317064a9e" name="DealtCardListener" isAbstract="false" isLeaf="false">
+            <Interface Id="0221d171-ccf9-442a-a5cf-ea3317064a9e" name="IDealCardListener" isAbstract="false" isLeaf="false">
               <elementDefinition Id="0a0be51a-35cb-4b00-b7ee-4cedb3229ad5" />
             </Interface>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="ae849feb-7445-44d0-aa0a-8e73ed70b3cf" name="Player" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="06f4c2ef-429c-431a-b493-50eb434f8c0a" />
+              <targetEnds>
+                <association Id="e0a6edf0-c5a8-42c0-bc99-5a52bf9a5f04" isDerived="false" sourceEndRoleName="Player" targetEndRoleName="IDealCardListener" isLeaf="false" isAbstract="false">
+                  <interfaceMoniker Id="0221d171-ccf9-442a-a5cf-ea3317064a9e" LastKnownName="IDealCardListener" />
+                  <relationshipOwnedElementsInternal>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="03a8dcdd-9451-47a2-a13f-8327e672f143" name="Player" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                        <elementDefinition Id="c0e8f0da-b2d5-4eaa-8ebc-6f10a123aa59" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="292d4a1b-30c8-482d-946f-fc2a3df327d9" name="IDealCardListener" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <elementDefinition Id="efb8cb32-ca72-474a-8730-6a801fb4d4aa" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                  </relationshipOwnedElementsInternal>
+                  <elementDefinition Id="624e7909-07c5-4b6e-8a03-06a12254bf68" />
+                </association>
+              </targetEnds>
+            </class>
           </packageHasNamedElement>
         </packagedElements>
       </package>
@@ -64,6 +119,35 @@
     <logicalClassDesignerModelHasPackages>
       <package Id="eb081666-ec82-44eb-9c1f-6c2a995814ca" name="View">
         <elementDefinition Id="1e570a99-7668-4063-9f0e-ce64f668e06e" />
+        <packagedElements>
+          <packageHasNamedElement>
+            <Interface Id="836709d9-0edd-45f3-b5a6-f4120d623737" name="IView" isAbstract="false" isLeaf="false">
+              <elementDefinition Id="504549ad-a2a8-41a3-aef2-e841225a1655" />
+            </Interface>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="855ae724-7971-425c-8cd5-72f923f2a63e" name="SimpleView" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="e1de6a15-0aa3-43d7-80bc-0239cfa4da95" />
+              <suppliersInternal>
+                <interfaceRealization Id="b59df655-8120-4878-a4af-2edabbf33e16">
+                  <interfaceMoniker Id="836709d9-0edd-45f3-b5a6-f4120d623737" LastKnownName="IView" />
+                  <elementDefinition Id="e01821f3-79d7-4360-90d8-c016da2b1a3e" />
+                </interfaceRealization>
+              </suppliersInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="0556bdaf-34d6-4271-b472-d693cb0900ad" name="SwedishView" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="a08ed085-a3a4-4bf7-89fd-bec3dcdb01d1" />
+              <suppliersInternal>
+                <interfaceRealization Id="670dac2d-0013-4238-8f55-30b98772748f">
+                  <interfaceMoniker Id="836709d9-0edd-45f3-b5a6-f4120d623737" LastKnownName="IView" />
+                  <elementDefinition Id="5ac1087e-b7b2-43b7-a11b-2ad82829e876" />
+                </interfaceRealization>
+              </suppliersInternal>
+            </class>
+          </packageHasNamedElement>
+        </packagedElements>
       </package>
     </logicalClassDesignerModelHasPackages>
     <logicalClassDesignerModelHasPackages>
@@ -75,7 +159,7 @@
               <elementDefinition Id="f6158fa0-9ddc-4def-b24c-34020660c173" />
               <suppliersInternal>
                 <interfaceRealization Id="3573fe23-302a-4246-896d-4f9e3c5b6aea">
-                  <interfaceMoniker Id="0221d171-ccf9-442a-a5cf-ea3317064a9e" LastKnownName="DealtCardListener" />
+                  <interfaceMoniker Id="0221d171-ccf9-442a-a5cf-ea3317064a9e" LastKnownName="IDealCardListener" />
                   <elementDefinition Id="4e5db5cb-9914-49f1-bcc9-d93adb960a0f" />
                 </interfaceRealization>
               </suppliersInternal>
@@ -105,6 +189,22 @@
                     </associationHasOwnedEnds>
                   </relationshipOwnedElementsInternal>
                   <elementDefinition Id="b7fbeda4-450f-4f53-af52-d47d6ad743f1" />
+                </association>
+                <association Id="30504f17-7f16-42af-918a-0221fecdc0d0" isDerived="false" sourceEndRoleName="PlayGame" targetEndRoleName="IView" isLeaf="false" isAbstract="false">
+                  <interfaceMoniker Id="836709d9-0edd-45f3-b5a6-f4120d623737" LastKnownName="IView" />
+                  <relationshipOwnedElementsInternal>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="4ba4dd0a-e6f8-4370-ac81-374f3ff9b568" name="PlayGame" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                        <elementDefinition Id="553d1615-21b8-4338-b8e4-98bf0fc52ce1" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="d066f08a-9812-49cb-bfd7-490b6d3522c6" name="IView" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <elementDefinition Id="7af4be5f-4c3c-4f66-bdaa-eeb7be87d59b" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                  </relationshipOwnedElementsInternal>
+                  <elementDefinition Id="11b02722-8c79-48d9-9ec2-a7811f361159" />
                 </association>
               </targetEnds>
             </class>
