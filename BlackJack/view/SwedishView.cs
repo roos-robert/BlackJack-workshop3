@@ -7,12 +7,17 @@ namespace BlackJack.view
 {
     class SwedishView : IView 
     {
+        const char quit = 'a';
+        const char newGame = 's';
+        const char hit = 'n';
+        const char stand = 's';
+
         public void DisplayWelcomeMessage()
         {
             System.Console.Clear();
             System.Console.WriteLine("Hej Black Jack Världen");
             System.Console.WriteLine("----------------------");
-            System.Console.WriteLine("Skriv 'p' för att Spela, 'h' för nytt kort, 's' för att stanna 'q' för att avsluta\n");
+            System.Console.WriteLine("Skriv '{0}' för att Spela, '{1}' för nytt kort, '{2}' för att stanna '{3}' för att avsluta\n", newGame, hit, stand, quit);
         }
 
         public void DisplayCard(model.Card a_card)
@@ -60,6 +65,11 @@ namespace BlackJack.view
             }
             System.Console.WriteLine("Poäng: {0}", a_score);
             System.Console.WriteLine("");
+        }
+
+        public int GetInput()
+        {
+            return System.Console.In.Read();
         }
 
         public void ShowBlackJack(IEnumerable<model.Card> dealerHand, IEnumerable<model.Card> playerHand, int dealerScore, int playerScore, bool gameOver, bool isDealerWinner)

@@ -24,7 +24,7 @@ namespace BlackJack.controller
             
             ShowBlackJack(a_game.IsGameOver());
 
-            int input = Console.In.Read();
+            int input = a_view.GetInput();
 
             if (input == 'p')
             {

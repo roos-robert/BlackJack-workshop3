@@ -7,12 +7,16 @@ namespace BlackJack.view
 {
     class SimpleView : IView
     {
+        const char quit = 'q';
+        const char newGame = 'p';
+        const char hit = 'h';
+        const char stand = 's';
 
         public void DisplayWelcomeMessage()
         {
             System.Console.Clear();
             System.Console.WriteLine("Hello Black Jack World");
-            System.Console.WriteLine("Type 'p' to Play, 'h' to Hit, 's' to Stand or 'q' to Quit\n");
+            System.Console.WriteLine("Type 'p' to Play, 'h' to Hit, 's' to Stand or 'q' to Quit\n", newGame, hit, stand, quit);
         }
 
         public void DisplayCard(model.Card a_card)
@@ -53,6 +57,11 @@ namespace BlackJack.view
                 System.Console.WriteLine("You Won!");
             }
             
+        }
+
+        public int GetInput()
+        {
+            return System.Console.In.Read();
         }
 
         public void ShowBlackJack(IEnumerable<model.Card> dealerHand, IEnumerable<model.Card> playerHand, int dealerScore, int playerScore, bool gameOver, bool isDealerWinner)
