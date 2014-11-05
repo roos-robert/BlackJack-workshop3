@@ -33,16 +33,17 @@ namespace BlackJack.model
             }
             return false;
         }
-
+        public void DealerDealsCard(Player a_player, bool a_show, bool a_toDealer)
+        {
+            Card c = m_deck.GetCard();
+            c.Show(a_show);
+            a_player.DealCard(c);
+        }
         public bool Hit(Player a_player)
         {
             if (m_deck != null && a_player.CalcScore() < g_maxScore && !IsGameOver())
             {
-                Card c;
-                c = m_deck.GetCard();
-                c.Show(true);
-                a_player.DealCard(c);
-
+                DealerDealsCard(a_player, true, false);
                 return true;
             }
             return false;
@@ -70,9 +71,7 @@ namespace BlackJack.model
 
                 while (m_hitRule.DoHit(this))
                 {
-                    Card c = m_deck.GetCard();
-                    c.Show(true);
-                    DealCard(c);             
+                    DealerDealsCard(this, true, true);           
                 }
             }
         }
