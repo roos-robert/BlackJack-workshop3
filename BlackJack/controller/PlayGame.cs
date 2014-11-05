@@ -62,7 +62,7 @@ namespace BlackJack.controller
         public void CardDealed() {
             a_view.DisplayWelcomeMessage();
             ShowBlackJack(a_game.IsGameOver());
-            System.Threading.Thread.Sleep(3000);
+            System.Threading.Thread.Sleep(1000);
             Console.Clear();
         }
     }

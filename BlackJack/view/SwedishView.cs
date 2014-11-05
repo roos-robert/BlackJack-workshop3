@@ -9,7 +9,7 @@ namespace BlackJack.view
     {
         // Constants for the menu choices
         const char quit = 'a';
-        const char newGame = 's';
+        const char newGame = 'p';
         const char hit = 'n';
         const char stand = 's';
 
